@@ -1,0 +1,70 @@
+total words:78
+different words:66
+=============================================================
+|O:1                 | percentage:<1.2821%>| appeard at index, 1
+|Freddled:1          | percentage:<1.2821%>| appeard at index, 2
+|Gruntbuggly:1       | percentage:<1.2821%>| appeard at index, 3
+|Thy:1               | percentage:<1.2821%>| appeard at index, 4
+|Micturations:1      | percentage:<1.2821%>| appeard at index, 5
+|Are:2               | percentage:<2.5641%>| appeard at index, 6, 33
+|To:1                | percentage:<1.2821%>| appeard at index, 7
+|Me:2                | percentage:<2.5641%>| appeard at index, 8, 59
+|As:1                | percentage:<1.2821%>| appeard at index, 9
+|Plurdled:1          | percentage:<1.2821%>| appeard at index, 10
+|Gabbleblotchits:1   | percentage:<1.2821%>| appeard at index, 11
+|On:1                | percentage:<1.2821%>| appeard at index, 12
+|A:2                 | percentage:<2.5641%>| appeard at index, 13, 25
+|Lurgid:1            | percentage:<1.2821%>| appeard at index, 14
+|Bee:1               | percentage:<1.2821%>| appeard at index, 15
+|That:1              | percentage:<1.2821%>| appeard at index, 16
+|Mordiously:1        | percentage:<1.2821%>| appeard at index, 17
+|Hath:1              | percentage:<1.2821%>| appeard at index, 18
+|Bitled:1            | percentage:<1.2821%>| appeard at index, 19
+|Out:1               | percentage:<1.2821%>| appeard at index, 20
+|Its:1               | percentage:<1.2821%>| appeard at index, 21
+|Earted:1            | percentage:<1.2821%>| appeard at index, 22
+|Jurtles:1           | percentage:<1.2821%>| appeard at index, 23
+|Into:1              | percentage:<1.2821%>| appeard at index, 24
+|Rancid:1            | percentage:<1.2821%>| appeard at index, 26
+|Festering:1         | percentage:<1.2821%>| appeard at index, 27
+|Now:1               | percentage:<1.2821%>| appeard at index, 28
+|The:3               | percentage:<3.8462%>| appeard at index, 29, 37, 70
+|Jurpling:1          | percentage:<1.2821%>| appeard at index, 30
+|Slayjid:1           | percentage:<1.2821%>| appeard at index, 31
+|Agrocrustules:1     | percentage:<1.2821%>| appeard at index, 32
+|Splurping:1         | percentage:<1.2821%>| appeard at index, 34
+|Hagrilly:1          | percentage:<1.2821%>| appeard at index, 35
+|Up:1                | percentage:<1.2821%>| appeard at index, 36
+|Axlegrurts:1        | percentage:<1.2821%>| appeard at index, 38
+|And:3               | percentage:<3.8462%>| appeard at index, 39, 43, 56
+|Living:1            | percentage:<1.2821%>| appeard at index, 40
+|Glupules:1          | percentage:<1.2821%>| appeard at index, 41
+|Frat:1              | percentage:<1.2821%>| appeard at index, 42
+|Slipulate:1         | percentage:<1.2821%>| appeard at index, 44
+|Like:1              | percentage:<1.2821%>| appeard at index, 45
+|Jowling:1           | percentage:<1.2821%>| appeard at index, 46
+|Meated:1            | percentage:<1.2821%>| appeard at index, 47
+|Liverslime:1        | percentage:<1.2821%>| appeard at index, 48
+|Groop:1             | percentage:<1.2821%>| appeard at index, 49
+|I:3                 | percentage:<3.8462%>| appeard at index, 50, 65, 77
+|Implore:1           | percentage:<1.2821%>| appeard at index, 51
+|Thee:2              | percentage:<2.5641%>| appeard at index, 52, 68
+|My:2                | percentage:<2.5641%>| appeard at index, 53, 73
+|Foonting:1          | percentage:<1.2821%>| appeard at index, 54
+|Turlingdromes:1     | percentage:<1.2821%>| appeard at index, 55
+|Hooptiously:1       | percentage:<1.2821%>| appeard at index, 57
+|Drangle:1           | percentage:<1.2821%>| appeard at index, 58
+|With:2              | percentage:<2.5641%>| appeard at index, 60, 72
+|Crinkly:1           | percentage:<1.2821%>| appeard at index, 61
+|Bindlewurdles:1     | percentage:<1.2821%>| appeard at index, 62
+|Or:1                | percentage:<1.2821%>| appeard at index, 63
+|Else:1              | percentage:<1.2821%>| appeard at index, 64
+|Shall:1             | percentage:<1.2821%>| appeard at index, 66
+|Rend:1              | percentage:<1.2821%>| appeard at index, 67
+|In:1                | percentage:<1.2821%>| appeard at index, 69
+|Gobberwarts:1       | percentage:<1.2821%>| appeard at index, 71
+|Blurglecruncheon:1  | percentage:<1.2821%>| appeard at index, 74
+|See:1               | percentage:<1.2821%>| appeard at index, 75
+|If:1                | percentage:<1.2821%>| appeard at index, 76
+|Don't:1             | percentage:<1.2821%>| appeard at index, 78
+=============================================================

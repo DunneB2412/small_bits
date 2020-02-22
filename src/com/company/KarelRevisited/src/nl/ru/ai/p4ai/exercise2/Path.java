@@ -1,0 +1,70 @@
+package nl.ru.ai.p4ai.exercise2;
+
+import static nl.ru.ai.karel.Karel.*;// brian 1016603 stijn 1019256
+
+public class Path
+{
+	private static void turn180()
+	{
+		turnRight();
+		turnRight();
+	}
+	
+	private static void followBals()
+	{
+		while (onBall()&& !inFrontOfWall())
+		{
+			getBall();
+			step();
+		}
+		if(onBall())
+		{
+			getBall();
+			
+		}
+		else
+		{
+			turn180();
+			step();
+		}
+	}
+	
+	private static void searchForPath(int trials)
+	{
+		while (trials>0)
+		{
+			turnRight();
+			if(inFrontOfWall())
+			{
+				turnRight();
+				trials--;
+			}
+			else
+			{
+				step();
+			if (!onBall())
+			{
+				turn180();
+				step();
+				turn180();
+				trials--;
+			}
+			else
+				trials=0;
+			}
+		}
+	}
+	
+  public static void main(String[] args)
+  {
+    map("path.map");
+    speed(100);
+    while(onBall())
+    {
+    	followBals();
+    	searchForPath(4);
+    }
+    
+    // your code here
+  }
+}
