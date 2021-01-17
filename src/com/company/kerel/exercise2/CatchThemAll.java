@@ -1,6 +1,7 @@
 package com.company.kerel.exercise2;
 
-import static com.company.KarelRevisited.src.nl.ru.ai.karel.Karel.*;// brian 1016603 stijn 1019256
+
+import static com.company.kerel.karel.Karel.*;
 
 public class CatchThemAll
 {

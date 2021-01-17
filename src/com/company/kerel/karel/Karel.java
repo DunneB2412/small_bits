@@ -1,8 +1,8 @@
 package com.company.kerel.karel;
-
 import java.awt.Container;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.Random;
 
 import javax.swing.JFrame;
 
@@ -32,10 +32,10 @@ public class Karel extends JFrame
   {
     this("empty.map");
   }
-  
+
   /**
    * Creates a robot with the specified map
-   * 
+   *
    * @param mapName
    */
   private Karel(String mapName)
@@ -69,7 +69,7 @@ public class Karel extends JFrame
       karel=new Karel();
     karel.drawingArea.turnLeft();
   }
-  
+
   /**
    * Karel turns to the right
    */
@@ -89,7 +89,7 @@ public class Karel extends JFrame
       karel=new Karel();
     karel.drawingArea.step();
   }
-  
+
   /**
    * Checks if karel is in front of a wall or may fall off his world
    * @return true if he is in front of a wall or may fall off his world
@@ -113,6 +113,36 @@ public class Karel extends JFrame
   }
 
   /**
+   * Catches the pokemon on Karel's current position
+   */
+  public static void getPokemon()
+  {
+    if(karel==null)
+      karel=new Karel();
+    karel.drawingArea.getPokemon();
+  }
+
+  /**
+   * Get the number of balls in Karel's possession
+   */
+  public static int getNumberOfBalls()
+  {
+    if(karel==null)
+      karel=new Karel();
+    return karel.drawingArea.getNumberOfBalls();
+  }
+
+  /**
+   * Get the number of pokemon Karel has got
+   */
+  public static int getNumberOfPokemon()
+  {
+    if(karel==null)
+      karel=new Karel();
+    return karel.drawingArea.getNumberOfPokemon();
+  }
+
+  /**
    * Checks if Karel is standing on a ball
    * @return true if Karel is on a ball, false otherwise
    */
@@ -124,6 +154,27 @@ public class Karel extends JFrame
   }
 
   /**
+   * Checks if Karel is standing on a pokemon
+   * @return true if Karel is on a pokemon, false otherwise
+   */
+  public static boolean onPokemon()
+  {
+    if(karel==null)
+      karel=new Karel();
+    return karel.drawingArea.onPokemon();
+  }
+
+  /**
+   * Karel finished his job
+   */
+  public static void ready()
+  {
+    if(karel==null)
+      karel=new Karel();
+    karel.drawingArea.ready();
+  }
+
+  /**
    * Karel takes a ball
    */
   public static void getBall()
@@ -132,7 +183,7 @@ public class Karel extends JFrame
       karel=new Karel();
     karel.drawingArea.getBall();
   }
-  
+
   /**
    * Karel drops a ball
    */
@@ -142,7 +193,7 @@ public class Karel extends JFrame
       karel=new Karel();
     karel.drawingArea.putBall();
   }
-  
+
   /**
    * Checks if Karel is facing north
    * @return true if Karel is facing north, false otherwise
@@ -164,7 +215,7 @@ public class Karel extends JFrame
       karel=new Karel();
     return karel.drawingArea.east();
   }
-  
+
   /**
    * Checks if Karel is facing south
    * @return true if Karel is facing south, false otherwise
@@ -185,5 +236,16 @@ public class Karel extends JFrame
     if(karel==null)
       karel=new Karel();
     return karel.drawingArea.west();
+  }
+
+  /**
+   * Creates a random number, between from and to including the bounds
+   * @param from
+   * @param to
+   * @return random number
+   */
+  public static int random(int from, int to)
+  {
+    return new Random().nextInt(to-from+1)+from;
   }
 }

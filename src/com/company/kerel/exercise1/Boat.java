@@ -2,7 +2,7 @@ package com.company.kerel.exercise1;
 
 import static com.company.kerel.karel.Karel.*;
 
-public class Boat // brian s1016603, stijn s1019256
+public class Boat
 {
 	static void placeBall()
 	{

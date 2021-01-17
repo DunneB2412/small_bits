@@ -2,12 +2,17 @@ package com.company.kerel.karel;
 
 import java.awt.Dimension;
 import java.awt.Graphics;
+import java.awt.Image;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
+import javax.imageio.ImageIO;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
@@ -41,10 +46,9 @@ class DrawingArea extends JPanel
   private int col;
   private int row;
   private int speed;
-  /*
-   * Do we hava an invisible wall around the grid?
-   */
-  private boolean invisibleWall;
+  private Map<Character, Image> pokemon;
+  private int numberOfBalls;
+  private int numberOfPokemon;
 
   /**
    * @param mapName
@@ -52,9 +56,26 @@ class DrawingArea extends JPanel
   DrawingArea(String mapName)
   {
     speed=1000;
+    if("pokemap.map".equals(mapName))
+      numberOfBalls=0;
+    else
+      numberOfBalls=10000;
+    numberOfPokemon=0;
     read(mapName);
+    pokemon=new HashMap<Character, Image>();
+    try
+    {
+      pokemon.put('c',ImageIO.read(new File("images","charmander.jpg")));
+      pokemon.put('p',ImageIO.read(new File("images","pikachu.jpg")));
+      pokemon.put('d',ImageIO.read(new File("images","psyduck.jpg")));
+      pokemon.put('b',ImageIO.read(new File("images","bulba.jpg")));
+      pokemon.put('e',ImageIO.read(new File("images","ev.jpg")));
+    }
+    catch(IOException e)
+    {
+      e.printStackTrace();
+    }
     setPreferredSize(new Dimension(cols*SIZE,rows*SIZE));
-    invisibleWall=!mapName.equals("church.map");
   }
 
   public void paintComponent(Graphics g)
@@ -74,6 +95,10 @@ class DrawingArea extends JPanel
           case STONE:
             g.drawRect(j*SIZE+SIZE/2-SIZE/2,i*SIZE+SIZE/2-SIZE/2,SIZE,SIZE);
             break;
+          default:
+            Image image=pokemon.get((char)map[i][j]);
+            if(image!=null)
+              g.drawImage(image,j*SIZE+SIZE/2-SIZE/2,i*SIZE+SIZE/2-SIZE/2,SIZE,SIZE,null);
         }
       }
     switch(orientation)
@@ -96,7 +121,7 @@ class DrawingArea extends JPanel
         break;
     }
   }
-  
+
   private void read(String mapName)
   {
     List<String> lines=new ArrayList<String>();
@@ -176,12 +201,19 @@ class DrawingArea extends JPanel
             col=j;
             orientation=WEST;
             break;
+          case 'p':
+          case 'c':
+          case 'd':
+          case 'b':
+          case 'e':
+            map[i][j]=line.charAt(j);
+            break;
           default:
             break;
         }
     }
   }
-  
+
   void turnLeft()
   {
     switch(orientation)
@@ -214,7 +246,7 @@ class DrawingArea extends JPanel
       // ignore
     }
   }
-  
+
   void turnRight()
   {
     switch(orientation)
@@ -286,25 +318,25 @@ class DrawingArea extends JPanel
     {
       case NORTH:
         if(row==0)
-          return invisibleWall;
+          return true;
         return map[row-1][col]==STONE;
       case EAST:
         if(col+1==cols)
-          return invisibleWall;
+          return true;
         return map[row][col+1]==STONE;
       case SOUTH:
         if(row+1==rows)
-          return invisibleWall;
+          return true;
         return map[row+1][col]==STONE;
       case WEST:
         if(col==0)
-          return invisibleWall;
+          return true;
         return map[row][col-1]==STONE;
       default:
         return true; // cannot happen
     }
   }
-  
+
   void speed(int i)
   {
     if(i<=0)
@@ -318,6 +350,17 @@ class DrawingArea extends JPanel
     return map[row][col]==BALL;
   }
 
+  boolean onPokemon()
+  {
+    return pokemon.containsKey((char)map[row][col]);
+  }
+
+  void ready()
+  {
+    JOptionPane.showMessageDialog(this,"Karel is ready");
+    System.exit(0);
+  }
+
   void getBall()
   {
     if(map[row][col]!=BALL)
@@ -326,17 +369,52 @@ class DrawingArea extends JPanel
       System.exit(1);
     }
     map[row][col]=EMPTY;
+    numberOfBalls++;
     refresh();
+  }
+
+  int getNumberOfBalls()
+  {
+    return numberOfBalls;
+  }
+
+  int getNumberOfPokemon()
+  {
+    return numberOfPokemon;
   }
 
   void putBall()
   {
+    if(numberOfBalls<=0)
+    {
+      JOptionPane.showMessageDialog(this,"Karel has no balls");
+      System.exit(1);
+    }
     if(map[row][col]==BALL)
     {
       JOptionPane.showMessageDialog(this,"There is already a ball here");
       System.exit(1);
     }
     map[row][col]=BALL;
+    numberOfBalls--;
+    refresh();
+  }
+
+  void getPokemon()
+  {
+    if(numberOfBalls<=0)
+    {
+      JOptionPane.showMessageDialog(this,"Karel has no pokeballs");
+      System.exit(1);
+    }
+    if(!pokemon.containsKey((char)map[row][col]))
+    {
+      JOptionPane.showMessageDialog(this,"There is no pokemon here");
+      System.exit(1);
+    }
+    map[row][col]=EMPTY;
+    numberOfBalls--;
+    numberOfPokemon++;
     refresh();
   }
 
@@ -344,17 +422,17 @@ class DrawingArea extends JPanel
   {
     return orientation==NORTH;
   }
-  
+
   boolean east()
   {
     return orientation==EAST;
   }
-  
+
   boolean south()
   {
     return orientation==SOUTH;
   }
-  
+
   boolean west()
   {
     return orientation==WEST;

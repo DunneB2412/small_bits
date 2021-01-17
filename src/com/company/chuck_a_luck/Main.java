@@ -20,7 +20,7 @@ Comment: it compairs enums but prity much dose that
 My program outputs the results (win or loss) and adds the winnings to the wallet if user wins or removes the bet amount from the wallet if the user loses [Mark out of 10: 10 ].
 Comment: i added the telling the user just for you
 
-2. Main
+2. com.company.sive_of_eratosthenes.Main
 
 I ask the user for the amount of cash he/she has, create a Wallet object and put this cash into it [Mark out of 15: 13]##################
 Comment: it's a little dirty but it's there.
