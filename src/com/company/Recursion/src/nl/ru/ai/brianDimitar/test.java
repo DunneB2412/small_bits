@@ -1,4 +1,4 @@
-package nl.ru.ai.brianDimitar;
+package com.company.Recursion.src.nl.ru.ai.brianDimitar;
 
 public class test {
 

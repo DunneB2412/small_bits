@@ -10660,7 +10660,7 @@ soul will be, Though none but heaven and earth its shame can see.
 Thus by keeping it secret thou wilt not escape thy sorrow, but rather
 thou wilt shed tears unceasingly, if not tears of the eyes, tears of
 blood from the heart, like those shed by that simple doctor our poet
-tells us of, that tried the test of the cup, which the wise Rinaldo,
+tells us of, that tried the com.company.fr_recursion.test of the cup, which the wise Rinaldo,
 better advised, refused to do; for though this may be a poetic fiction it
 contains a moral lesson worthy of attention and study and imitation.
 Moreover by what I am about to say to thee thou wilt be led to see the
@@ -10675,7 +10675,7 @@ thyself too being of the same belief, as knowing nothing to the contrary,
 would it be reasonable in thee to desire to take that diamond and place
 it between an anvil and a hammer, and by mere force of blows and strength
 of arm try if it were as hard and as fine as they said? And if thou
-didst, and if the stone should resist so silly a test, that would add
+didst, and if the stone should resist so silly a com.company.fr_recursion.test, that would add
 nothing to its value or reputation; and if it were broken, as it might
 be, would not all be lost? Undoubtedly it would, leaving its owner to be
 rated as a fool in the opinion of all. Consider, then, Anselmo my friend,
@@ -10724,7 +10724,7 @@ keep her in seclusion, and among other arguments he used these:
 
 Woman is a thing of glass;
 But her brittleness 'tis best
-Not too curiously to test:
+Not too curiously to com.company.fr_recursion.test:
 Who knows what may come to pass?
 
 Breaking is an easy matter,
@@ -10816,7 +10816,7 @@ not be so yielding that her virtue will give way at the first attack:
 with this mere attempt I shall rest satisfied, and thou wilt have done
 what our friendship binds thee to do, not only in giving me life, but in
 persuading me not to discard my honour. And this thou art bound to do for
-one reason alone, that, being, as I am, resolved to apply this test, it
+one reason alone, that, being, as I am, resolved to apply this com.company.fr_recursion.test, it
 is not for thee to permit me to reveal my weakness to another, and so
 imperil that honour thou art striving to keep me from losing; and if
 thine may not stand as high as it ought in the estimation of Camilla

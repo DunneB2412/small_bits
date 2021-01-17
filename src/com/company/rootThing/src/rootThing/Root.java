@@ -1,4 +1,4 @@
-package rootThing;
+package com.company.rootThing.src.rootThing;
 
 import java.util.Scanner;
 

@@ -1,3 +1,5 @@
+package com.company.Week3.src;
+
 import java.util.Scanner;
 
 public class Tutorial {

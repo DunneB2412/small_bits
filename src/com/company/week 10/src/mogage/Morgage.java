@@ -1,5 +1,3 @@
-package mogage;
-
 import java.util.Scanner;
 
 /* SELF ASSESSMENT

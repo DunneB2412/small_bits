@@ -9066,7 +9066,7 @@ Dream Theater
 Live at Budokan
 2004
 6
-The test that stumped them all
+The com.company.fr_recursion.test that stumped them all
 progressive,metal,live
 5:00
 U.S.A.
@@ -9650,7 +9650,7 @@ Dream Theater
 Six degrees of inner turbulence
 2002
 9
-The test that stumped them all (Six degrees of inner turbulence)
+The com.company.fr_recursion.test that stumped them all (Six degrees of inner turbulence)
 progressive,metal
 5:03
 U.S.A.
@@ -25978,7 +25978,7 @@ R.E.M.
 New adventures in hi-fi
 1996
 3
-New test leper
+New com.company.fr_recursion.test leper
 alternative,pop
 5:25
 U.S.A.

@@ -1,3 +1,4 @@
+package com.company.Week5.src;
 
 import java.util.ArrayList;
 import java.util.Scanner;

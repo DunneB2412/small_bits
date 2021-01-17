@@ -1,7 +1,3 @@
-package com.company;
-
-
-
 /* SELF ASSESSMENT
    1.  createSequence:
 Did I use the correct method definition?

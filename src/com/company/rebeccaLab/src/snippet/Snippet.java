@@ -1,4 +1,4 @@
-package snippet;
+package com.company.rebeccaLab.src.snippet;
 
 public class Snippet {
 	public static void main(String[] args) {

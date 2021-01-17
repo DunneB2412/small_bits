@@ -1,4 +1,4 @@
-package daysOfChristmass;
+package com.company.week8.src.daysOfChristmass;
 
 /* SELF ASSESSMENT
 1. Did I use easy-to-understand meaningfu,l properly formatted, variable names and CONSTANTS?

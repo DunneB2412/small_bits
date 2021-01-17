@@ -1,3 +1,5 @@
+package com.company.Week3.src;
+
 import java.util.Random;
 import java.util.Scanner;
 

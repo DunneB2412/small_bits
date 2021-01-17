@@ -1,4 +1,4 @@
-package rebeccaLab;
+package com.company.rebeccaLab.src.rebeccaLab;
 
 import javax.swing.GroupLayout.Alignment;
 

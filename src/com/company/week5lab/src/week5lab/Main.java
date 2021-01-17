@@ -1,4 +1,4 @@
-package week5lab;
+package com.company.week5lab.src.week5lab;
 
 import java.util.ArrayList;
 import java.util.Scanner;

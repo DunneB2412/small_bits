@@ -32,7 +32,7 @@ public class ExOneMain extends PApplet{
         rect(0,0,width,height);
         //simple();
 
-        //test.show(red,green,blue);
+        //com.company.fr_recursion.test.show(red,green,blue);
 
         //for(ColidableRectangle box: boxes){
         //  box.show(new Force(new Vector(0,0)0,0));

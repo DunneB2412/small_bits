@@ -1,5 +1,3 @@
-package com.company;
-
 public class IntOI {
     public final int value;
     private boolean active;

@@ -3678,7 +3678,7 @@ mind for that purpose, which was why I couldn't use it. I
 wondered if there was a way I could check.
 "I went to the ship's medical bay and plugged myself into the
 encephelographic screen. I went through every major screening
-test on both my heads - all the tests I had to go through under
+com.company.fr_recursion.test on both my heads - all the tests I had to go through under
 government medical officers before my nomination for
 Presidency could be properly ratified. They showed up nothing.
 Nothing unexpected at least. They showed that I was clever,

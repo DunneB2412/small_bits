@@ -1,5 +1,3 @@
-package nl.ru.aiBrianStijn;
-
 import java.util.Scanner;
 
 public class NewtonRaphson {

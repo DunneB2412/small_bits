@@ -1,6 +1,4 @@
-package nl.ru.aiBrianStijn;
-
-import java.util.Scanner; // brian 1016603 stign 
+import java.util.Scanner; // brian 1016603 stign
 
 public class Solver // brian 1016603 stign 
 {
