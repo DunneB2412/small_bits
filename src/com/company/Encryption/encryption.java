@@ -115,7 +115,6 @@ public class encryption {
 	/**
 	 * incripts or decrypts with function crypt the data from ine file and writes it to a new file
 	 * @param encrypt; true or fals for encrypt or decrypt
-	 * @param random; random intiger for key
 	 * @param fileName; read adress
 	 * @param destination; write adress
 	 * @param run; states weather the function will devrypt all the file or just a sample of |range|
@@ -172,6 +171,7 @@ public class encryption {
 		catch(IOException e)
 		{
 			System.out.println("oops! something went wrong ");
+			e.printStackTrace();
 			return true;
 		}
 	}
